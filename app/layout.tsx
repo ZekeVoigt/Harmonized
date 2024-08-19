@@ -11,20 +11,20 @@ import { EdgeStoreProvider } from "@/lib/edgestore";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zotion",
+  title: "Harmonized",
   description:
     "The seamless platform where creative and productive work happens.",
   icons: {
     icon: [
       {
         media: "(prefers-color-scheme: light)",
-        url: "/logo.svg",
-        href: "/logo.svg",
+        url: "/Logo.png",
+        href: "/Logo.png",
       },
       {
         media: "(prefers-color-scheme: dark)",
-        url: "/logo-dark.svg",
-        href: "/logo-dark.svg",
+        url: "/Logo-dark.png",
+        href: "/Logo-dark.png",
       },
     ],
   },
@@ -45,7 +45,7 @@ export default function RootLayout({
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange
-              storageKey="zotion-theme-2"
+              storageKey="Harmonized-theme-2"
             >
               <Toaster position="bottom-center" />
               <ModalProvider />
