@@ -1,6 +1,8 @@
+import Image from "next/image";
 import { Footer } from "./_components/Footer";
 import { Heading } from "./_components/Heading";
 import { Heroes } from "./_components/Heroes";
+import Body from "./_components/body";
 
 export default function LandingPage() {
   return (
@@ -8,6 +10,7 @@ export default function LandingPage() {
       <div className="flex flex-1 flex-col items-center justify-center gap-y-8 px-6 pb-10 text-center md:justify-start">
         <Heading />
         <Heroes />
+        <Body />
       </div>
       <Footer />
     </div>

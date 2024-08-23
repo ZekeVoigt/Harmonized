@@ -32,7 +32,7 @@ export const Navbar = () => {
               </Button>
             </SignInButton>
             <SignInButton mode="modal">
-              <Button size="sm">Get Harmonized Free</Button>
+              <Button className="rounded-3xl" size="sm">Get Harmonized Free</Button>
             </SignInButton>
           </>
         )}

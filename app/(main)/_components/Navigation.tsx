@@ -13,6 +13,7 @@ import { UserItem } from "./UserItem";
 
 import { toast } from "sonner";
 import {
+  Brush,
   ChevronsLeft,
   MenuIcon,
   Plus,
@@ -134,6 +135,20 @@ const Navigation = () => {
     });
   };
 
+  {/* 
+  const handleCreate1 = () => {
+    const promise = create({ title: "Untitled drawing" }).then((drawingId) =>
+      router.push(`/draw/${drawingId}`),
+    );
+
+    toast.promise(promise, {
+      loading: "Creating a new drawing....",
+      success: "New drawing created.",
+      error: "Failed to create a drawing.",
+    });
+  };
+
+  */}
   return (
     <>
       <aside
@@ -159,6 +174,7 @@ const Navigation = () => {
           <Item label="Search" icon={Search} isSearch onClick={search.onOpen} />
           <Item label="Settings" icon={Settings} onClick={settings.onOpen} />
           <Item onClick={handleCreate} label="New page" icon={PlusCircle} />
+        {/*   <Item onClick={handleCreate1} label={"New Drawing"} icon={Brush} /> */}
         </div>
         <div className="mt-4">
           <DocumentList />
